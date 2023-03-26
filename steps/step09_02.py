@@ -61,6 +61,12 @@ class Exp(Function):
         gx = np.exp(x) * gy
         return gx
 
+def square(x):
+    return Square()(x)
+
+
+def exp(x):
+    return Exp()(x)
 
 def main():
     x = Variable(np.array(1.0))
